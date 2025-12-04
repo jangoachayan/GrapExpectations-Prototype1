@@ -1,7 +1,18 @@
-# GrapExpectations-Prototype1
+# GrapExpectation Studio - Prototype 1
 
-This is the Prototype1 project for GrapExpectation.
-Test Version for grapexpectations.
+**Smart fermentation studio for wine, beer, mead & kombucha with live sensor tracking.**
+
+## Overview
+GrapExpectation Studio is a cross-platform fermentation management system. This repository contains the source code for the Android App, Web App, and Backend services.
+
+## Documentation
+*   [Product & Technical Specification](docs/SPECIFICATION.md)
+
+## Tech Stack
+*   **Android:** Kotlin, Jetpack Compose
+*   **Web:** React/Flutter Web (TBD)
+*   **Backend:** Firebase (Auth, Firestore, Storage), Google Cloud (Cloud Run, BigQuery, Pub/Sub)
+
 
 �
 �
@@ -175,6 +186,4 @@ gcloud firestore export gs://grapexpectation-backups/YYYY-MM-DD
 ● Optional CSV/Parquet export to GCS
 
 
-
-Testing Push from Laptop
 
