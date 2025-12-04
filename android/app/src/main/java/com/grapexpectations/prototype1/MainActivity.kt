@@ -16,31 +16,21 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            GrapExpectationsPrototype1Theme {
-                // A surface container using the 'background' color from the theme
+            GrapExpectationsPrototype1Theme(darkTheme = true) { // Force dark theme for premium feel
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    com.grapexpectations.prototype1.ui.auth.LoginScreen(
+                        onLoginClick = { email, password ->
+                            // TODO: Handle login
+                        },
+                        onSignUpClick = { email, password ->
+                            // TODO: Handle sign up
+                        }
+                    )
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    GrapExpectationsPrototype1Theme {
-        Greeting("Android")
     }
 }
