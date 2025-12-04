@@ -1,0 +1,37 @@
+[
+    {
+        "name": "device_id",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "timestamp",
+        "type": "TIMESTAMP",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "gravity",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "temperature_c",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "battery_pct",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "rssi",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "raw_payload",
+        "type": "JSON",
+        "mode": "NULLABLE"
+    }
+]
