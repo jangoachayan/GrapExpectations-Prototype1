@@ -173,3 +173,8 @@ gcloud firestore export gs://grapexpectation-backups/YYYY-MM-DD
 8.3 BigQuery Snapshots 
 ● Automatic table snapshots 
 ● Optional CSV/Parquet export to GCS
+
+
+
+Testing Push from Laptop
+
