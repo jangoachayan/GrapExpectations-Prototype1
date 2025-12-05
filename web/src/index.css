@@ -1,0 +1,95 @@
+:root {
+  --wine-primary: #9C27B0;
+  --wine-on-primary: #FFFFFF;
+  --wine-container: #7B1FA2;
+  --wine-on-container: #E1BEE7;
+  
+  --ferment-secondary: #00E676;
+  --ferment-on-secondary: #000000;
+  
+  --background-dark: #121212;
+  --surface-dark: #1E1E1E;
+  --on-surface-dark: #E0E0E0;
+  
+  --font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-dark);
+  color: var(--on-surface-dark);
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  color: var(--wine-on-container);
+}
+
+button {
+  background-color: var(--surface-dark);
+  color: var(--wine-on-container);
+  border: 1px solid var(--wine-primary);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  border-radius: 8px;
+}
+
+button:hover {
+  border-color: var(--ferment-secondary);
+}
+
+button.primary {
+  background-color: var(--wine-primary);
+  color: var(--wine-on-primary);
+  border: none;
+}
+
+button.primary:hover {
+  background-color: var(--wine-container);
+}
+
+input, select {
+  background-color: var(--surface-dark);
+  color: var(--on-surface-dark);
+  border: 1px solid #333;
+  padding: 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.recipe-builder {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--wine-on-container);
+}
+
+.ingredient-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
